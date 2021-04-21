@@ -1,0 +1,13 @@
+<h2>Create new sport</h2>
+
+<form action="/sports/new" method="POST">
+
+  <label for="sport">Sport: </label>
+  <input type="text" name="sport">
+
+  <button type="submit">Create Sport</button>
+</form>
+
+{{#if errorMessage}}
+  <p>{{this.errorMessage}}</p>
+{{/if}}
